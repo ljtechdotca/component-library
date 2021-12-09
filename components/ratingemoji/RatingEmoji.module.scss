@@ -1,0 +1,40 @@
+.root {
+}
+
+.container {
+  display: flex;
+}
+
+.list {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  display: flex;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+.item {
+  transition: 0.3s ease background-color;
+  &__active {
+    background-color: rgba(0, 0, 0, 0.05);
+    .button {
+      opacity: 1;
+    }
+  }
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+    .button {
+      opacity: 1;
+    }
+  }
+}
+
+.button {
+  transition: 0.3s ease opacity;
+  cursor: pointer;
+  opacity: 0.5;
+  background-color: unset;
+  border: unset;
+  font-size: 1.25rem;
+  padding: 1rem;
+}

@@ -1,0 +1,54 @@
+.root {
+  width: calc((1rem + 2px) * 2);
+  display: flex;
+  border-radius: 9999px;
+  border: 1px solid #ddd;
+  cursor: pointer;
+  transition: 0.3s ease background-color;
+  &__active {
+    @extend .root;
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+  &:hover {
+    .container {
+      &::after {
+        background-color: rgba(0, 0, 0, 0.05);
+        border-radius: 9999px;
+        content: "";
+        display: block;
+        height: 2rem;
+        left: -50%;
+        position: absolute;
+        top: -50%;
+        width: 2rem;
+        z-index: 80;
+      }
+    }
+  }
+}
+
+.container {
+  appearance: none;
+  background-color: #ddd;
+  border-radius: 9999px;
+  cursor: pointer;
+  height: 1rem;
+  transition: 0.3s ease background-color, 0.3s ease transform;
+  width: 1rem;
+  position: relative;
+  &::after {
+    transition: 0.3s ease background-color;
+    background-color: transparent;
+  }
+  &::before {
+    transition: 0.3s ease background-color;
+    background-color: transparent;
+  }
+  &:checked {
+    background: dodgerblue;
+  }
+  &__active {
+    @extend .container;
+    transform: translateX(calc(125% - 2px));
+  }
+}

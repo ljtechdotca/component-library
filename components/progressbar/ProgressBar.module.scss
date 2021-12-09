@@ -1,0 +1,53 @@
+.root {
+}
+
+.container {
+}
+
+.list {
+  display: flex;
+  list-style-type: none;
+}
+
+.content {
+  // width: 100%;
+  // display: grid;
+  // flex-shrink: 1;
+  // text-align: center;
+}
+
+.item {
+  white-space: nowrap;
+  display: flex;
+  align-items: center;
+  padding: 0.5rem;
+  color: #ddd;
+  width: 100%;
+  font-weight: 600;
+  transition: 0.3s ease color;
+  &_shrink {
+    @extend .item;
+    width: auto;
+    &__active {
+      @extend .item;
+      width: auto;
+      color: dodgerblue;
+    }
+  }
+  &__active {
+    @extend .item;
+    color: dodgerblue;
+  }
+}
+
+.line {
+  margin-left: 1rem;
+  width: 100%;
+  height: 2px;
+  background-color: #ddd;
+  transition: 0.3s ease background-color;
+  &__active {
+    @extend .line;
+    background-color: dodgerblue;
+  }
+}

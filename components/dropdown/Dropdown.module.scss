@@ -1,0 +1,36 @@
+.root {
+}
+
+.container {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+}
+
+.button {
+  padding: 0.5rem;
+  cursor: pointer;
+  background-color: unset;
+  border: unset;
+  font-size: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  align-items: center;
+  &__active {
+    @extend .button;
+    border-bottom: 1px solid #ddd;
+  }
+}
+
+.icon {
+  display: grid;
+  margin-left: 0.5rem;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.item {
+  padding: 0.5rem;
+}

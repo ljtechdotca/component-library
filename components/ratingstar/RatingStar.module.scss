@@ -1,0 +1,38 @@
+.root {
+}
+
+.container {
+  display: flex;
+}
+
+.list {
+  border: 1px solid #ddd;
+  border-radius: 3px;
+  display: flex;
+  overflow: hidden;
+  list-style-type: none;
+}
+
+.item {
+  transition: 0.3s ease background-color;
+  &__active {
+    background-color: rgba(0, 0, 0, 0.05);
+    .button {
+      color: inherit;
+      text-shadow: unset;
+    }
+  }
+  &:hover {
+    background-color: rgba(0, 0, 0, 0.05);
+  }
+}
+
+.button {
+  transition: 0.3s ease color, 0.3s ease text-shadow;
+  color: transparent;
+  text-shadow: 0 0 0 rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  background-color: unset;
+  border: unset;
+  padding: 0.25rem;
+}
