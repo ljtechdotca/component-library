@@ -1,4 +1,4 @@
-![components](https://imgur.com/a/vmq0W26)
+![components](https://i.imgur.com/eQeviZ2.png)
 
 - Dropdown
 - ProgressBar
