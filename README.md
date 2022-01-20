@@ -1,4 +1,6 @@
-![components](https://i.imgur.com/eQeviZ2.png)
+# Component Library
+
+A small collection of simple React components. Includes:
 
 - Dropdown
 - ProgressBar
@@ -7,12 +9,15 @@
 - RatingStar
 - Toggle
 
-**USE THESE GLOBALS**
+## Screenshots
 
-```css
-* {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-```
+![App Screenshot](https://i.imgur.com/7Ocg7c2.png)
+
+## Tech Stack
+
+- React
+- Node.js
+- TypeScript
+- JavaScript
+- SCSS
+- Next.js
